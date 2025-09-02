@@ -1,0 +1,77 @@
+/* Reset & basics */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+body { background-color: #111; color: #fff; transition: all 0.3s ease; }
+body.light { background-color: #f0f0f0; color: #111; }
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: #fff;
+}
+
+#toggleTheme {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #ff416c;
+    font-weight: bold;
+}
+
+.movies-section {
+    padding: 2rem;
+}
+
+.movies-section h2 {
+    margin-bottom: 1rem;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.movie-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+body.light .movie-card { background-color: #fff; color: #111; }
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    display: block;
+}
+
+.movie-info {
+    padding: 0.5rem;
+}
+
+.movie-title {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.movie-rating {
+    color: gold;
+    margin-bottom: 0.3rem;
+}
+
+.movie-review {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+body.light .movie-review { color: #555; }
